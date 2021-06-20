@@ -1,0 +1,11 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Verify Account
+From: noryply@geekshop.local
+To: aas@aaas.lpl
+Date: Sun, 20 Jun 2021 16:02:54 -0000
+Message-ID: <162420497478.11808.5250538691344035438@DESKTOP-OO2TCMU>
+
+Ваша ссылка активации: http://localhost:8000/auth/verify/aas@aaas.lpl/4398b807883f31bbc33fa8472ff09ded6ed4b667
+-------------------------------------------------------------------------------
