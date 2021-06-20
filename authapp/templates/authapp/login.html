@@ -3,6 +3,9 @@
 
 
 {% block content %}
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
     <form class="form-horizontal" action="{% url 'auth:login' %}" method="post">
         {% csrf_token %}
         {% if next %}
@@ -19,3 +22,4 @@
     </button>
 
 {% endblock %}
+
