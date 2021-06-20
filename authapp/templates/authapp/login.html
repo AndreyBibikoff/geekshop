@@ -6,6 +6,7 @@
     {% for message in messages %}
         {{ message }}
     {% endfor %}
+    <form class="form-horizontal" action="{% url 'auth:login' %}" method="post">
         {% csrf_token %}
         {% if next %}
             <input type="hidden" name="next" value="{{ next }}">
@@ -13,11 +14,12 @@
         {{ login_form.as_p }}
         <br>
         <input class="form-control" type="submit" value="войти">
-    </div>
+    </form>
     <button class="btn btn-round form-control">
         <a href="{% url 'auth:register' %}" class="">
-            Зарегистрироваться
+            зарегистрироваться
         </a>
     </button>
 
 {% endblock %}
+
