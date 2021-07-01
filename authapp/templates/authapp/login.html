@@ -3,6 +3,9 @@
 
 
 {% block content %}
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
     <form class="form-horizontal" action="{% url 'auth:login' %}" method="post">
         {% csrf_token %}
         {% if next %}
@@ -17,5 +20,10 @@
             зарегистрироваться
         </a>
     </button>
-
+    <button class="btn btn-round form-control">
+        <a href="{% url 'social:begin' 'vk-oauth2' %}?next=/" class="">
+            Вход через VK
+        </a>
+    </button>
 {% endblock %}
+
