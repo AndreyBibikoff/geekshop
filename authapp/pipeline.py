@@ -7,7 +7,7 @@ from social_core.exceptions import AuthForbidden
 from authapp.models import ShopUserProfile
 
 
-def sabe_user_profile(backend, user, response, *args, **kwargs):
+def save_user_profile(backend, user, response, *args, **kwargs):
     if backend != 'vk-oauth2':
         return
 
@@ -30,10 +30,11 @@ def sabe_user_profile(backend, user, response, *args, **kwargs):
         user.shopuserprofile.about_me = vk_data['about']
 
     if vk_data['bdate']:
-        b_date = datetime.strftime(vk_data['bdate'], '%d.%m.%Y').date()
+        b_date = datetime.strftime(vk_data['bdate'], "%d.%m.%Y").date()
         age = timezone.now().date().year = b_date.year
-        if age <18:
+        if age < 18:
             user.delete()
             raise AuthForbidden('social_core.backend.vk.VKOAuth2')
         user.age = age
+
     user.save()

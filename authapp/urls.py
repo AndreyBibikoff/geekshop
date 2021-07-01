@@ -4,7 +4,7 @@ from django.urls import path
 import authapp.views as authapp
 from django.urls import re_path
 
-app_name="authapp"
+app_name = "authapp"
 
 urlpatterns = [
     re_path(r'^login/$', authapp.login, name='login'),
