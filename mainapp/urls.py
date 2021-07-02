@@ -1,7 +1,8 @@
 # from django.conf.urls import url
+from django.urls import re_path
 
 import mainapp.views as mainapp
-from django.urls import re_path
+
 
 app_name="mainapp"
 
