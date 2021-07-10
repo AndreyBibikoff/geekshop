@@ -1,0 +1,13 @@
+{% extends 'adminapp/base.html' %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <h1>Congratulations!</h1>
+        <p>Account successfully activated</p>
+
+    {% else %}
+        <h1>FAIL!</h1>
+        <p>Account is not activated</p>
+        <p>Please contact support: support@geekshop.local</p>
+    {% endif %}
+{% endblock %}
