@@ -1,0 +1,11 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Verify Account
+From: noryply@geekshop.local
+To: ds@dd.ur
+Date: Sun, 20 Jun 2021 16:42:12 -0000
+Message-ID: <162420733280.25060.3503363366477806264@DESKTOP-OO2TCMU>
+
+Ваша ссылка активации: http://localhost:8000/auth/verify/ds@dd.ur/a763b0103a6274a392720a7cf3259b00ee20c768
+-------------------------------------------------------------------------------

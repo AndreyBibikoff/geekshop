@@ -1,0 +1,11 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Verify Account
+From: noryply@geekshop.local
+To: dsd@ggg.ru
+Date: Sun, 20 Jun 2021 17:15:33 -0000
+Message-ID: <162420933320.23000.12115846221162300800@DESKTOP-OO2TCMU>
+
+Ваша ссылка активации: http://localhost:8000/auth/verify/dsd@ggg.ru/13987f6f36edc73b2f524e8c69abf1abbf4d0d63
+-------------------------------------------------------------------------------
